@@ -1,0 +1,91 @@
+ 
+****************************************
+Report : resources
+Design : CPU
+Version: K-2015.06
+Date   : Mon May  1 20:16:33 2023
+****************************************
+
+
+Resource Report for this hierarchy in file ../rtl/CPU.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| eq_x_1         | DW_cmp         | width=32   | eq_138 (CPU.v:138)         |
+| add_x_8        | DW01_inc       | width=3    | add_214_S2 (CPU.v:214)     |
+| add_x_16       | DW01_add       | width=32   | AddSum/add_38 (ALU.v:38)   |
+| mult_x_17      | DW_mult_uns    | a_width=32 | AddSum/mult_53 (ALU.v:53)  |
+|                |                | b_width=32 |                            |
+| add_x_19       | DW01_add       | width=8    | VALU/add_50 (VALU.v:50)    |
+| add_x_20       | DW01_add       | width=8    | VALU/add_51 (VALU.v:51)    |
+| add_x_21       | DW01_add       | width=8    | VALU/add_52 (VALU.v:52)    |
+| add_x_22       | DW01_add       | width=8    | VALU/add_53 (VALU.v:53)    |
+| sub_x_23       | DW01_sub       | width=8    | VALU/sub_69 (VALU.v:69)    |
+| sub_x_24       | DW01_sub       | width=8    | VALU/sub_70 (VALU.v:70)    |
+| sub_x_25       | DW01_sub       | width=8    | VALU/sub_71 (VALU.v:71)    |
+| sub_x_26       | DW01_sub       | width=8    | VALU/sub_72 (VALU.v:72)    |
+| add_x_30       | DW01_add       | width=32   | ALU/add_38 (ALU.v:38)      |
+| mult_x_31      | DW_mult_uns    | a_width=32 | ALU/mult_53 (ALU.v:53)     |
+|                |                | b_width=32 |                            |
+| sub_x_15       | DW01_sub       | width=32   | AddSum/sub_34 (ALU.v:34)   |
+|                |                |            | AddSum/sub_41 (ALU.v:41)   |
+| sub_x_29       | DW01_sub       | width=32   | ALU/sub_34 (ALU.v:34)      |
+|                |                |            | ALU/sub_41 (ALU.v:41)      |
+| DP_OP_95J5_122_4298             |            |                            |
+|                | DP_OP_95J5_122_4298 |       |                            |
+=============================================================================
+
+Datapath Report for DP_OP_95J5_122_4298
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_95J5_122_4298  | VALU/mult_89 (VALU.v:89) VALU/add_94 (VALU.v:94)    |
+|                      | VALU/add_94_2 (VALU.v:94) VALU/add_94_3 (VALU.v:94) |
+|                      | VALU/mult_90 (VALU.v:90) VALU/mult_91 (VALU.v:91)   |
+|                      | VALU/mult_92 (VALU.v:92)                            |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Signed   | 8     |                                          |
+| I2    | PI   | Signed   | 8     |                                          |
+| I3    | PI   | Signed   | 8     |                                          |
+| I4    | PI   | Signed   | 8     |                                          |
+| I5    | PI   | Signed   | 8     |                                          |
+| I6    | PI   | Signed   | 8     |                                          |
+| I7    | PI   | Signed   | 8     |                                          |
+| I8    | PI   | Signed   | 8     |                                          |
+| T25   | IFO  | Signed   | 16    | I1 * I2 (VALU.v:89)                      |
+| T26   | IFO  | Signed   | 16    | I3 * I4 (VALU.v:90)                      |
+| T27   | IFO  | Signed   | 16    | I5 * I6 (VALU.v:91)                      |
+| T28   | IFO  | Signed   | 16    | I7 * I8 (VALU.v:92)                      |
+| O1    | PO   | Signed   | 19    | T25 + T26 + T27 + T28 (VALU.v:94)        |
+==============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| eq_x_1             | DW_cmp           | apparch (area)     |                |
+| add_x_8            | DW01_inc         | apparch (area)     |                |
+| add_x_16           | DW01_add         | apparch (area)     |                |
+| add_x_19           | DW01_add         | apparch (area)     |                |
+| add_x_20           | DW01_add         | apparch (area)     |                |
+| add_x_21           | DW01_add         | apparch (area)     |                |
+| add_x_22           | DW01_add         | apparch (area)     |                |
+| sub_x_23           | DW01_sub         | apparch (area)     |                |
+| sub_x_24           | DW01_sub         | apparch (area)     |                |
+| sub_x_25           | DW01_sub         | apparch (area)     |                |
+| sub_x_26           | DW01_sub         | apparch (area)     |                |
+| add_x_30           | DW01_add         | apparch (area)     |                |
+| mult_x_31          | DW_mult_uns      | apparch (area)     |                |
+| sub_x_29           | DW01_sub         | apparch (area)     |                |
+| DP_OP_95J5_122_4298                   |                    |                |
+|                    | DP_OP_95J5_122_4298 | str (area)      |                |
+===============================================================================
+
+1

@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : CPU
+Version: K-2015.06
+Date   : Mon May  1 20:16:27 2023
+****************************************
+
+Library(s) Used:
+
+    fsc0h_d_generic_core_ff1p32vm40c (File: /home/IC/Desktop/Projec/ASIC/UMC130nm/lib/StdCell/fsc0h_d_generic_core_ff1p32vm40c.db)
+
+Number of ports:                         2658
+Number of nets:                         21573
+Number of cells:                        18958
+Number of combinational cells:          15139
+Number of sequential cells:              3795
+Number of macros/black boxes:               0
+Number of buf/inv:                       5408
+Number of references:                      83
+
+Combinational area:             127874.559602
+Buf/Inv area:                    25058.559440
+Noncombinational area:          129364.480251
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                257239.039854
+Total area:                 undefined
+1

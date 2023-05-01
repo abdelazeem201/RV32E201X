@@ -1,0 +1,80 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : CPU
+Version: K-2015.06
+Date   : Mon May  1 20:16:33 2023
+****************************************
+
+
+Library(s) Used:
+
+    fsc0h_d_generic_core_ff1p32vm40c (File: /home/IC/Desktop/Projec/ASIC/UMC130nm/lib/StdCell/fsc0h_d_generic_core_ff1p32vm40c.db)
+
+
+Operating Conditions: WCCOM   Library: fsc0h_d_generic_core_ss1p08v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+CPU                    G200K             fsc0h_d_generic_core_tt1p2v25c
+MUX32_3                enG5K             fsc0h_d_generic_core_ff1p32vm40c
+PC                     enG5K             fsc0h_d_generic_core_ff1p32vm40c
+Adder                  enG5K             fsc0h_d_generic_core_ff1p32vm40c
+Instruction_Memory     enG30K            fsc0h_d_generic_core_ff1p32vm40c
+Shift1                 enG5K             fsc0h_d_generic_core_ff1p32vm40c
+Sign_Extend_1          enG5K             fsc0h_d_generic_core_ff1p32vm40c
+IF_ID                  enG5K             fsc0h_d_generic_core_ff1p32vm40c
+Control                enG5K             fsc0h_d_generic_core_ff1p32vm40c
+Registers              enG30K            fsc0h_d_generic_core_ff1p32vm40c
+ID_EX                  enG5K             fsc0h_d_generic_core_ff1p32vm40c
+ALU_Control            enG5K             fsc0h_d_generic_core_ff1p32vm40c
+HazradDetect           enG5K             fsc0h_d_generic_core_ff1p32vm40c
+MUX_Control            enG5K             fsc0h_d_generic_core_ff1p32vm40c
+ForwardingUnit         enG5K             fsc0h_d_generic_core_ff1p32vm40c
+ForwardingMUX_1        enG5K             fsc0h_d_generic_core_ff1p32vm40c
+EX_MEM                 enG5K             fsc0h_d_generic_core_ff1p32vm40c
+Data_Memory            enG10K            fsc0h_d_generic_core_ff1p32vm40c
+MEM_WB                 enG5K             fsc0h_d_generic_core_ff1p32vm40c
+VALU_ctrl              enG5K             fsc0h_d_generic_core_ff1p32vm40c
+ForwardingMUX_0        enG5K             fsc0h_d_generic_core_ff1p32vm40c
+MUX32_0                enG5K             fsc0h_d_generic_core_ff1p32vm40c
+MUX32_1                enG5K             fsc0h_d_generic_core_ff1p32vm40c
+MUX32_2                enG5K             fsc0h_d_generic_core_ff1p32vm40c
+Sign_Extend_0          enG5K             fsc0h_d_generic_core_ff1p32vm40c
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   3.0690 mW   (91%)
+  Net Switching Power  = 321.5682 uW    (9%)
+                         ---------
+Total Dynamic Power    =   3.3906 mW  (100%)
+
+Cell Leakage Power     =  30.3985 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           3.0317        2.6800e-03        1.6513e+07            3.0509  (  89.18%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  3.7271e-02            0.3189        1.3885e+07            0.3700  (  10.82%)
+--------------------------------------------------------------------------------------------------
+Total              3.0690 mW         0.3216 mW     3.0399e+07 pW         3.4210 mW
+1

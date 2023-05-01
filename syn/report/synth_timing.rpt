@@ -1,0 +1,366 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : CPU
+Version: K-2015.06
+Date   : Mon May  1 20:16:33 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsc0h_d_generic_core_ss1p08v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Registers/register_reg_31__18_
+              (falling edge-triggered flip-flop clocked by clk_i)
+  Endpoint: pcSelect/clk_i_r_REG33_S6
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CPU                G200K                 fsc0h_d_generic_core_tt1p2v25c
+  Registers          enG30K                fsc0h_d_generic_core_ff1p32vm40c
+  IF_ID              enG5K                 fsc0h_d_generic_core_ff1p32vm40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (fall edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.50       5.50
+  Registers/register_reg_31__18_/CKB (DBFRBEHD)           0.00 #     5.50 f
+  Registers/register_reg_31__18_/Q (DBFRBEHD)             0.21       5.71 r
+  Registers/U2745/O (AOI22BHD)                            0.05       5.77 f
+  Registers/U9/O (ND2CHD)                                 0.08       5.85 r
+  Registers/U2746/O (AOI112BHD)                           0.05       5.90 f
+  Registers/U2756/O (AN4B1BHD)                            0.12       6.03 f
+  Registers/U521/O (ND2CHD)                               0.08       6.10 r
+  Registers/RSdata_o[18] (Registers)                      0.00       6.10 r
+  U566/O (XNR2CHD)                                        0.11       6.22 f
+  U1156/O (AN4B1BHD)                                      0.12       6.34 f
+  U1158/O (AN4B1BHD)                                      0.11       6.45 f
+  U1161/O (ND3CHD)                                        0.06       6.50 r
+  U1162/O (AN4B1BHD)                                      0.04       6.54 f
+  IF_ID/flush_i (IF_ID)                                   0.00       6.54 f
+  IF_ID/U4/O (OR2EHD)                                     0.09       6.63 f
+  IF_ID/U3/O (INVDHD)                                     0.09       6.73 r
+  IF_ID/U6/O (AN2CHD)                                     0.07       6.79 r
+  IF_ID/pcIm_o[0] (IF_ID)                                 0.00       6.79 r
+  PCImmExtend/data0_i[0] (Sign_Extend_1)                  0.00       6.79 r
+  PCImmExtend/U1/O (BUFEHD)                               0.05       6.85 r
+  PCImmExtend/data_o[0] (Sign_Extend_1)                   0.00       6.85 r
+  shiftLeft/data_i[0] (Shift1)                            0.00       6.85 r
+  shiftLeft/U2/O (BUFEHD)                                 0.07       6.92 r
+  shiftLeft/data_o[1] (Shift1)                            0.00       6.92 r
+  U1580/O (AN2EHD)                                        0.09       7.01 r
+  U2750/O (OAI12CHD)                                      0.04       7.05 f
+  U645/O (ND2CHD)                                         0.09       7.14 r
+  U649/O (ND2CHD)                                         0.03       7.17 f
+  U647/O (ND2CHD)                                         0.08       7.25 r
+  U653/O (ND2CHD)                                         0.03       7.28 f
+  U651/O (ND2CHD)                                         0.08       7.36 r
+  U657/O (ND2CHD)                                         0.03       7.39 f
+  U655/O (ND2CHD)                                         0.08       7.48 r
+  U661/O (ND2CHD)                                         0.03       7.51 f
+  U659/O (ND2CHD)                                         0.08       7.59 r
+  U664/O (ND2CHD)                                         0.03       7.62 f
+  U557/O (ND2CHD)                                         0.08       7.70 r
+  U668/O (ND2CHD)                                         0.03       7.73 f
+  U666/O (ND2CHD)                                         0.08       7.81 r
+  U672/O (ND2CHD)                                         0.03       7.84 f
+  U670/O (ND2CHD)                                         0.08       7.93 r
+  U676/O (ND2CHD)                                         0.03       7.96 f
+  U674/O (ND2CHD)                                         0.08       8.04 r
+  U680/O (ND2CHD)                                         0.03       8.07 f
+  U678/O (ND2CHD)                                         0.08       8.15 r
+  U640/O (ND2CHD)                                         0.03       8.18 f
+  U556/O (ND2CHD)                                         0.08       8.26 r
+  U684/O (ND2CHD)                                         0.03       8.29 f
+  U682/O (ND2CHD)                                         0.08       8.38 r
+  U688/O (ND2CHD)                                         0.03       8.41 f
+  U686/O (ND2DHD)                                         0.07       8.48 r
+  U692/O (ND2CHD)                                         0.03       8.51 f
+  U690/O (ND2CHD)                                         0.08       8.59 r
+  U696/O (ND2CHD)                                         0.03       8.62 f
+  U694/O (ND2DHD)                                         0.07       8.69 r
+  U699/O (ND2CHD)                                         0.03       8.72 f
+  U555/O (ND2DHD)                                         0.07       8.79 r
+  U703/O (ND2CHD)                                         0.03       8.82 f
+  U701/O (ND2DHD)                                         0.07       8.89 r
+  U707/O (ND2CHD)                                         0.03       8.92 f
+  U705/O (ND2DHD)                                         0.07       8.99 r
+  U711/O (ND2CHD)                                         0.03       9.02 f
+  U709/O (ND2DHD)                                         0.07       9.09 r
+  U715/O (ND2CHD)                                         0.03       9.12 f
+  U713/O (ND2DHD)                                         0.07       9.18 r
+  U719/O (ND2CHD)                                         0.03       9.21 f
+  U578/O (ND2DHD)                                         0.07       9.28 r
+  U724/O (ND2CHD)                                         0.03       9.31 f
+  U722/O (ND2DHD)                                         0.07       9.38 r
+  U728/O (ND2CHD)                                         0.03       9.41 f
+  U726/O (ND2DHD)                                         0.07       9.48 r
+  U732/O (ND2CHD)                                         0.03       9.51 f
+  U730/O (ND2DHD)                                         0.07       9.58 r
+  U736/O (ND2CHD)                                         0.03       9.61 f
+  U579/O (ND2DHD)                                         0.07       9.68 r
+  U643/O (ND2CHD)                                         0.03       9.71 f
+  U554/O (ND2DHD)                                         0.07       9.78 r
+  U740/O (ND2CHD)                                         0.03       9.80 f
+  U738/O (AN2CHD)                                         0.11       9.91 f
+  U553/O (INVDHD)                                         0.04       9.96 r
+  U613/O (ND2CHD)                                         0.06      10.02 f
+  U2751/O (AOI12CHD)                                      0.13      10.15 r
+  U2756/O (OAI22CHD)                                      0.05      10.20 f
+  U765/O (XNR2CHD)                                        0.11      10.31 r
+  pcSelect/data2_i[31] (MUX32_3)                          0.00      10.31 r
+  pcSelect/clk_i_r_REG33_S6/D (QDFFCHD)                   0.00      10.31 r
+  data arrival time                                                 10.31
+
+  clock clk_i (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  pcSelect/clk_i_r_REG33_S6/CK (QDFFCHD)                  0.00      10.40 r
+  library setup time                                     -0.03      10.37
+  data required time                                                10.37
+  --------------------------------------------------------------------------
+  data required time                                                10.37
+  data arrival time                                                -10.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: Registers/register_reg_31__18_
+              (falling edge-triggered flip-flop clocked by clk_i)
+  Endpoint: pcSelect/clk_i_r_REG34_S6
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CPU                G200K                 fsc0h_d_generic_core_tt1p2v25c
+  Registers          enG30K                fsc0h_d_generic_core_ff1p32vm40c
+  IF_ID              enG5K                 fsc0h_d_generic_core_ff1p32vm40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (fall edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.50       5.50
+  Registers/register_reg_31__18_/CKB (DBFRBEHD)           0.00 #     5.50 f
+  Registers/register_reg_31__18_/Q (DBFRBEHD)             0.21       5.71 r
+  Registers/U2745/O (AOI22BHD)                            0.05       5.77 f
+  Registers/U9/O (ND2CHD)                                 0.08       5.85 r
+  Registers/U2746/O (AOI112BHD)                           0.05       5.90 f
+  Registers/U2756/O (AN4B1BHD)                            0.12       6.03 f
+  Registers/U521/O (ND2CHD)                               0.08       6.10 r
+  Registers/RSdata_o[18] (Registers)                      0.00       6.10 r
+  U566/O (XNR2CHD)                                        0.11       6.22 f
+  U1156/O (AN4B1BHD)                                      0.12       6.34 f
+  U1158/O (AN4B1BHD)                                      0.11       6.45 f
+  U1161/O (ND3CHD)                                        0.06       6.50 r
+  U1162/O (AN4B1BHD)                                      0.04       6.54 f
+  IF_ID/flush_i (IF_ID)                                   0.00       6.54 f
+  IF_ID/U4/O (OR2EHD)                                     0.09       6.63 f
+  IF_ID/U3/O (INVDHD)                                     0.09       6.73 r
+  IF_ID/U6/O (AN2CHD)                                     0.07       6.79 r
+  IF_ID/pcIm_o[0] (IF_ID)                                 0.00       6.79 r
+  PCImmExtend/data0_i[0] (Sign_Extend_1)                  0.00       6.79 r
+  PCImmExtend/U1/O (BUFEHD)                               0.05       6.85 r
+  PCImmExtend/data_o[0] (Sign_Extend_1)                   0.00       6.85 r
+  shiftLeft/data_i[0] (Shift1)                            0.00       6.85 r
+  shiftLeft/U2/O (BUFEHD)                                 0.07       6.92 r
+  shiftLeft/data_o[1] (Shift1)                            0.00       6.92 r
+  U1580/O (AN2EHD)                                        0.09       7.01 r
+  U2750/O (OAI12CHD)                                      0.04       7.05 f
+  U645/O (ND2CHD)                                         0.09       7.14 r
+  U649/O (ND2CHD)                                         0.03       7.17 f
+  U647/O (ND2CHD)                                         0.08       7.25 r
+  U653/O (ND2CHD)                                         0.03       7.28 f
+  U651/O (ND2CHD)                                         0.08       7.36 r
+  U657/O (ND2CHD)                                         0.03       7.39 f
+  U655/O (ND2CHD)                                         0.08       7.48 r
+  U661/O (ND2CHD)                                         0.03       7.51 f
+  U659/O (ND2CHD)                                         0.08       7.59 r
+  U664/O (ND2CHD)                                         0.03       7.62 f
+  U557/O (ND2CHD)                                         0.08       7.70 r
+  U668/O (ND2CHD)                                         0.03       7.73 f
+  U666/O (ND2CHD)                                         0.08       7.81 r
+  U672/O (ND2CHD)                                         0.03       7.84 f
+  U670/O (ND2CHD)                                         0.08       7.93 r
+  U676/O (ND2CHD)                                         0.03       7.96 f
+  U674/O (ND2CHD)                                         0.08       8.04 r
+  U680/O (ND2CHD)                                         0.03       8.07 f
+  U678/O (ND2CHD)                                         0.08       8.15 r
+  U640/O (ND2CHD)                                         0.03       8.18 f
+  U556/O (ND2CHD)                                         0.08       8.26 r
+  U684/O (ND2CHD)                                         0.03       8.29 f
+  U682/O (ND2CHD)                                         0.08       8.38 r
+  U688/O (ND2CHD)                                         0.03       8.41 f
+  U686/O (ND2DHD)                                         0.07       8.48 r
+  U692/O (ND2CHD)                                         0.03       8.51 f
+  U690/O (ND2CHD)                                         0.08       8.59 r
+  U696/O (ND2CHD)                                         0.03       8.62 f
+  U694/O (ND2DHD)                                         0.07       8.69 r
+  U699/O (ND2CHD)                                         0.03       8.72 f
+  U555/O (ND2DHD)                                         0.07       8.79 r
+  U703/O (ND2CHD)                                         0.03       8.82 f
+  U701/O (ND2DHD)                                         0.07       8.89 r
+  U707/O (ND2CHD)                                         0.03       8.92 f
+  U705/O (ND2DHD)                                         0.07       8.99 r
+  U711/O (ND2CHD)                                         0.03       9.02 f
+  U709/O (ND2DHD)                                         0.07       9.09 r
+  U715/O (ND2CHD)                                         0.03       9.12 f
+  U713/O (ND2DHD)                                         0.07       9.18 r
+  U719/O (ND2CHD)                                         0.03       9.21 f
+  U578/O (ND2DHD)                                         0.07       9.28 r
+  U724/O (ND2CHD)                                         0.03       9.31 f
+  U722/O (ND2DHD)                                         0.07       9.38 r
+  U728/O (ND2CHD)                                         0.03       9.41 f
+  U726/O (ND2DHD)                                         0.07       9.48 r
+  U732/O (ND2CHD)                                         0.03       9.51 f
+  U730/O (ND2DHD)                                         0.07       9.58 r
+  U736/O (ND2CHD)                                         0.03       9.61 f
+  U579/O (ND2DHD)                                         0.07       9.68 r
+  U643/O (ND2CHD)                                         0.03       9.71 f
+  U554/O (ND2DHD)                                         0.07       9.78 r
+  U740/O (ND2CHD)                                         0.03       9.80 f
+  U738/O (AN2CHD)                                         0.11       9.91 f
+  U553/O (INVDHD)                                         0.04       9.96 r
+  U613/O (ND2CHD)                                         0.06      10.02 f
+  U2751/O (AOI12CHD)                                      0.13      10.15 r
+  U764/O (AO13CHD)                                        0.09      10.24 r
+  pcSelect/data2_i[30] (MUX32_3)                          0.00      10.24 r
+  pcSelect/clk_i_r_REG34_S6/D (QDFFCHD)                   0.00      10.24 r
+  data arrival time                                                 10.24
+
+  clock clk_i (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  pcSelect/clk_i_r_REG34_S6/CK (QDFFCHD)                  0.00      10.40 r
+  library setup time                                     -0.03      10.37
+  data required time                                                10.37
+  --------------------------------------------------------------------------
+  data required time                                                10.37
+  data arrival time                                                -10.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.12
+
+
+  Startpoint: Registers/register_reg_31__18_
+              (falling edge-triggered flip-flop clocked by clk_i)
+  Endpoint: pcSelect/clk_i_r_REG35_S6
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CPU                G200K                 fsc0h_d_generic_core_tt1p2v25c
+  Registers          enG30K                fsc0h_d_generic_core_ff1p32vm40c
+  IF_ID              enG5K                 fsc0h_d_generic_core_ff1p32vm40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (fall edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.50       5.50
+  Registers/register_reg_31__18_/CKB (DBFRBEHD)           0.00 #     5.50 f
+  Registers/register_reg_31__18_/Q (DBFRBEHD)             0.21       5.71 r
+  Registers/U2745/O (AOI22BHD)                            0.05       5.77 f
+  Registers/U9/O (ND2CHD)                                 0.08       5.85 r
+  Registers/U2746/O (AOI112BHD)                           0.05       5.90 f
+  Registers/U2756/O (AN4B1BHD)                            0.12       6.03 f
+  Registers/U521/O (ND2CHD)                               0.08       6.10 r
+  Registers/RSdata_o[18] (Registers)                      0.00       6.10 r
+  U566/O (XNR2CHD)                                        0.11       6.22 f
+  U1156/O (AN4B1BHD)                                      0.12       6.34 f
+  U1158/O (AN4B1BHD)                                      0.11       6.45 f
+  U1161/O (ND3CHD)                                        0.06       6.50 r
+  U1162/O (AN4B1BHD)                                      0.04       6.54 f
+  IF_ID/flush_i (IF_ID)                                   0.00       6.54 f
+  IF_ID/U4/O (OR2EHD)                                     0.09       6.63 f
+  IF_ID/U3/O (INVDHD)                                     0.09       6.73 r
+  IF_ID/U6/O (AN2CHD)                                     0.07       6.79 r
+  IF_ID/pcIm_o[0] (IF_ID)                                 0.00       6.79 r
+  PCImmExtend/data0_i[0] (Sign_Extend_1)                  0.00       6.79 r
+  PCImmExtend/U1/O (BUFEHD)                               0.05       6.85 r
+  PCImmExtend/data_o[0] (Sign_Extend_1)                   0.00       6.85 r
+  shiftLeft/data_i[0] (Shift1)                            0.00       6.85 r
+  shiftLeft/U2/O (BUFEHD)                                 0.07       6.92 r
+  shiftLeft/data_o[1] (Shift1)                            0.00       6.92 r
+  U1580/O (AN2EHD)                                        0.09       7.01 r
+  U2750/O (OAI12CHD)                                      0.04       7.05 f
+  U645/O (ND2CHD)                                         0.09       7.14 r
+  U649/O (ND2CHD)                                         0.03       7.17 f
+  U647/O (ND2CHD)                                         0.08       7.25 r
+  U653/O (ND2CHD)                                         0.03       7.28 f
+  U651/O (ND2CHD)                                         0.08       7.36 r
+  U657/O (ND2CHD)                                         0.03       7.39 f
+  U655/O (ND2CHD)                                         0.08       7.48 r
+  U661/O (ND2CHD)                                         0.03       7.51 f
+  U659/O (ND2CHD)                                         0.08       7.59 r
+  U664/O (ND2CHD)                                         0.03       7.62 f
+  U557/O (ND2CHD)                                         0.08       7.70 r
+  U668/O (ND2CHD)                                         0.03       7.73 f
+  U666/O (ND2CHD)                                         0.08       7.81 r
+  U672/O (ND2CHD)                                         0.03       7.84 f
+  U670/O (ND2CHD)                                         0.08       7.93 r
+  U676/O (ND2CHD)                                         0.03       7.96 f
+  U674/O (ND2CHD)                                         0.08       8.04 r
+  U680/O (ND2CHD)                                         0.03       8.07 f
+  U678/O (ND2CHD)                                         0.08       8.15 r
+  U640/O (ND2CHD)                                         0.03       8.18 f
+  U556/O (ND2CHD)                                         0.08       8.26 r
+  U684/O (ND2CHD)                                         0.03       8.29 f
+  U682/O (ND2CHD)                                         0.08       8.38 r
+  U688/O (ND2CHD)                                         0.03       8.41 f
+  U686/O (ND2DHD)                                         0.07       8.48 r
+  U692/O (ND2CHD)                                         0.03       8.51 f
+  U690/O (ND2CHD)                                         0.08       8.59 r
+  U696/O (ND2CHD)                                         0.03       8.62 f
+  U694/O (ND2DHD)                                         0.07       8.69 r
+  U699/O (ND2CHD)                                         0.03       8.72 f
+  U555/O (ND2DHD)                                         0.07       8.79 r
+  U703/O (ND2CHD)                                         0.03       8.82 f
+  U701/O (ND2DHD)                                         0.07       8.89 r
+  U707/O (ND2CHD)                                         0.03       8.92 f
+  U705/O (ND2DHD)                                         0.07       8.99 r
+  U711/O (ND2CHD)                                         0.03       9.02 f
+  U709/O (ND2DHD)                                         0.07       9.09 r
+  U715/O (ND2CHD)                                         0.03       9.12 f
+  U713/O (ND2DHD)                                         0.07       9.18 r
+  U719/O (ND2CHD)                                         0.03       9.21 f
+  U578/O (ND2DHD)                                         0.07       9.28 r
+  U724/O (ND2CHD)                                         0.03       9.31 f
+  U722/O (ND2DHD)                                         0.07       9.38 r
+  U728/O (ND2CHD)                                         0.03       9.41 f
+  U726/O (ND2DHD)                                         0.07       9.48 r
+  U732/O (ND2CHD)                                         0.03       9.51 f
+  U730/O (ND2DHD)                                         0.07       9.58 r
+  U736/O (ND2CHD)                                         0.03       9.61 f
+  U579/O (ND2DHD)                                         0.07       9.68 r
+  U643/O (ND2CHD)                                         0.03       9.71 f
+  U554/O (ND2DHD)                                         0.07       9.78 r
+  U740/O (ND2CHD)                                         0.03       9.80 f
+  U738/O (AN2CHD)                                         0.11       9.91 f
+  U763/O (XNR3CHD)                                        0.11      10.02 r
+  pcSelect/data2_i[29] (MUX32_3)                          0.00      10.02 r
+  pcSelect/clk_i_r_REG35_S6/D (QDFFCHD)                   0.00      10.02 r
+  data arrival time                                                 10.02
+
+  clock clk_i (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  pcSelect/clk_i_r_REG35_S6/CK (QDFFCHD)                  0.00      10.40 r
+  library setup time                                     -0.03      10.37
+  data required time                                                10.37
+  --------------------------------------------------------------------------
+  data required time                                                10.37
+  data arrival time                                                -10.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.34
+
+
+1
